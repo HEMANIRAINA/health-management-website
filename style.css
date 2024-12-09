@@ -1,0 +1,54 @@
+/* General Styling */
+body {
+  font-family: 'Nunito', sans-serif;
+}
+
+/* Hero Section */
+.hero {
+  height: 100vh;
+  background: linear-gradient(to right, #6a11cb, #2575fc);
+  color: white;
+  text-align: center;
+}
+
+/* Gradients */
+.bg-gradient-about {
+  background: linear-gradient(to right, #ff9a9e, #fad0c4);
+}
+
+.bg-gradient-exercise {
+  background: linear-gradient(to right, #43cea2, #185a9d);
+}
+
+.bg-gradient-contact {
+  background: linear-gradient(to right, #ffafbd, #ffc3a0);
+}
+
+/* Navbar */
+.navbar-brand {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  background-color: #007bff;
+  color: white !important;
+  border-radius: 5px;
+}
+
+/* Button Styling */
+.btn {
+  border-radius: 50px;
+}
+
+/* Form Inputs */
+input,
+textarea {
+  border-radius: 10px;
+}
+
+/* Footer */
+footer {
+  background: #222;
+}

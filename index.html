@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Healthy Living and Nutrition</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow">
+    <a class="navbar-brand text-light" href="#"><i class="fas fa-heartbeat"></i> Healthy Life</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item"><a class="nav-link nav-highlight" href="#about"><i class="fas fa-info-circle"></i> About</a></li>
+        <li class="nav-item"><a class="nav-link nav-highlight" href="#nutrition"><i class="fas fa-apple-alt"></i> Nutrition</a></li>
+        <li class="nav-item"><a class="nav-link nav-highlight" href="#exercise"><i class="fas fa-dumbbell"></i> Exercise</a></li>
+        <li class="nav-item"><a class="nav-link nav-highlight" href="#bmi"><i class="fas fa-calculator"></i> BMI</a></li>
+        <li class="nav-item"><a class="nav-link nav-highlight" href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero text-center d-flex align-items-center justify-content-center">
+    <div class="container">
+      <h1 class="text-white animate__animated animate__fadeInDown">Welcome to Healthy Living!</h1>
+      <p class="text-light animate__animated animate__fadeInUp">Discover tips for a balanced life with proper nutrition and exercise.</p>
+      <a href="#about" class="btn btn-light btn-lg mt-3 shadow">Learn More</a>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="py-5 bg-gradient-about">
+    <div class="container">
+      <h2 class="text-center text-dark mb-4">About Healthy Living</h2>
+      <p>Healthy living involves making conscious choices that improve both physical and mental well-being. It includes maintaining a balanced diet, staying active through regular exercise, managing stress, and ensuring adequate sleep. A healthy lifestyle helps prevent chronic diseases, boosts energy, and promotes longevity. By prioritizing nutrition, fitness, and mindfulness, we can live happier, more fulfilling lives.</p>
+    </div>
+  </section>
+
+  <!-- Nutrition Section -->
+  <section id="nutrition" class="bg-light py-5">
+    <div class="container">
+      <h2 class="text-center mb-4 text-primary">Nutrition</h2>
+      <div class="row">
+        <div class="col-md-6 mb-4">
+          <h3>Balanced Diet</h3>
+          <p>A balanced diet includes a variety of foods in the right proportions to provide essential nutrients like carbohydrates, proteins, fats, vitamins, and minerals. It helps maintain overall health, supports growth, and reduces the risk of chronic diseases.</p>
+        </div>
+        <div class="col-md-6">
+          <h3>Food Pyramid</h3>
+          <img src="C:/Users/raina/OneDrive/Desktop/RWD/project/images/Screenshot 2024-12-08 150715.png" alt="Food Pyramid" class="img-fluid border border-primary rounded">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Exercise Section -->
+  <section id="exercise" class="py-5 bg-gradient-exercise text-white">
+    <div class="container">
+      <h2 class="text-center mb-4">Exercise</h2>
+      <div class="row">
+        <div class="col-lg-8 mx-auto">
+          <p>Regular physical activity improves muscle strength, boosts endurance, and enhances overall health.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BMI Calculator -->
+  <section id="bmi" class="bg-light py-5">
+    <div class="container">
+      <h2 class="text-center mb-4 text-success">BMI Calculator</h2>
+      <div class="row">
+        <div class="col-lg-6 mx-auto">
+          <form id="bmiForm">
+            <div class="form-group">
+               <label for="weight">Weight (kg):</label>
+              <input type="number" id="weight" class="form-control" required>
+            </div>
+            <div class="form-group">
+              <label for="height">Height (m):</label>
+              <input type="number" step="0.01" id="height" class="form-control" required>
+            </div>
+            <button type="submit" class="btn btn-success btn-block shadow">Calculate BMI</button>
+          </form>
+          <p class="mt-3 text-center font-weight-bold" id="bmiResult"></p>
+        </div>
+      </div>
+
+       </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-5 bg-gradient-contact">
+    <div class="container">
+      <h2 class="text-center mb-4 text-white">Contact Us</h2>
+      <form>
+        <div class="row">
+          <div class="col-md-6 mb-3">
+            <label for="name">Name:</label>
+            <input type="text" id="name" class="form-control" required>
+          </div>
+          <div class="col-md-6 mb-3">
+            <label for="email">Email:</label>
+            <input type="email" id="email" class="form-control" required>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="message">Message:</label>
+          <textarea id="message" class="form-control" rows="5" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary btn-block shadow">Send</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-3">
+    <p>© 2024 Healthy Life. All rights reserved.</p>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
